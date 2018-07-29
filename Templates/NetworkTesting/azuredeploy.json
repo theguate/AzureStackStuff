@@ -83,7 +83,7 @@
         "mvasubnetRef": "[concat(variables('vnetID'),'/subnets/',variables('nvasubnetName'))]",
         "gatewaysubnetRef": "[concat(variables('vnetID'),'/subnets/',variables('gatewaysubnetName'))]",
         "networkSecurityGroupName": "vnet-nsg",
-        "vmExtensionScriptLocation": "https://raw.githubusercontent.com/pappleby64/AzureStackStuff/master/Templates/NetworkTesting"
+        "vmExtensionScriptLocation": "https://raw.githubusercontent.com/theguate/AzureStackStuff/master/Templates/NetworkTesting"
     },
     "resources": [
         {

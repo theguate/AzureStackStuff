@@ -1,7 +1,7 @@
-﻿$location = 'mas1'
+$location = 'local'
 $resourceGroupName = 'Networking05'
-$externalGatewayIP = '10.18.10.2'
-$externalPrefix = '10.100.0.0/16'
+$externalGatewayIP = '192.168.105.2' 
+$externalPrefix = '192.168.8.0/16'
 $sharedSecret = "password"
 
 #Create a resource Group
@@ -77,4 +77,3 @@ New-AzureRmVM -ResourceGroupName $ResourceGroupName -Location $Location -VM $Vir
 Write-Host -ForegroundColor Green 'Adding custome route'
 Add-AzureRmRouteConfig -Name "WinNVARoute" -AddressPrefix $externalPrefix -NextHopType VirtualAppliance -NextHopIpAddress $netInterface.IpConfigurations[0].PrivateIpAddress -RouteTable $routeTable
 Set-AzureRmRouteTable -RouteTable $routeTable 
-

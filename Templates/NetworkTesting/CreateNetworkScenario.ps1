@@ -1,7 +1,7 @@
 $location = 'local'
 $resourceGroupName = 'Networking05'
 $externalGatewayIP = '192.168.105.2' 
-$externalPrefix = '192.168.8.0/16'
+$externalPrefix = '192.168.0.0/16'
 $sharedSecret = "password"
 
 #Create a resource Group

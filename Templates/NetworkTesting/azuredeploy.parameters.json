@@ -9,7 +9,7 @@
             "value": "localadmin"
         },
         "ExternalAddressSpace": {
-            "value": "192.168.8.0/16"
+            "value": "192.168.0.0/16"
         },
         "ExternalGatewayIPAddress": {
             "value": "192.168.105.2"
